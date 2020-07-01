@@ -1,0 +1,22 @@
+{
+  "fullnameRC": "Nguyễn Thị Mỹ Trang",
+  "usernameRC": "18Auto",
+  "emailRC": "nguyenthimytrang@gmail.com",
+  "passwordRC": "mytrang",
+  "usernameAD": "admin",
+  "passwordAD": 234,
+  "usernameGD": "VanThu234",
+  "passwordGD": "vanthu",
+  "usernameVT": "Demo9",
+  "passwordVT": "giamdocdemo",
+  "nameCreatedBefore": "Nguyễn Demo8",
+  "nameNotCreatedBefore": "Auto",
+  "userNameCreatedBefore": "TruongPhong",
+  "userNameNotCreatedBefore": "Ngoc Mai",
+  "fromNumber": 300602020,
+  "sourceNumber": "T4300602020",
+  "publisher": "Cục Bưu Chính",
+  "title": "New Update Title1",
+  "contentdemo": "This is content of demo test case. Have a nice day!",
+  "emailForgotPassword": "mai.truong@student.passerellesnumeriques.org"
+}

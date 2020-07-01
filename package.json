@@ -1,0 +1,25 @@
+{
+  "name": "dana_train",
+  "version": "1.0.0",
+  "description": "dana train website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.9.0",
+    "cypress-cucumber-preprocessor": "^2.5.0",
+    "cypress-file-upload": "^4.0.7",
+    "cypress-xpath": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/integration/stepExecuteDanatrain"
+  },
+  "author": "mai.truong",
+  "license": "ISC"
+}
