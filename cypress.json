@@ -5,6 +5,5 @@
     "requestTimeout": 30000,
     "viewportWidth": 1920,
     "viewportHeight": 1080,
-    "modifyObstructiveCode": false,
-    "baseUrl": "http://localhost:49216"
+    "modifyObstructiveCode": false
 }

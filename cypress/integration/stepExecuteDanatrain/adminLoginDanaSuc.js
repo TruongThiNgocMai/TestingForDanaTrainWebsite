@@ -1,5 +1,6 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 const loginAdmin = require('../../fixtures/example.json')
+// const xlsx = require("xlsx")
 
 /// <reference types="cypress" />
 
@@ -33,6 +34,8 @@ Then(/^I verify login successfully into Dana train website with macbook-15 scree
     cy.get('.notification-section > .ant-btn').should('be.visible')
     cy.get('.cancel-button').should('be.visible')
     cy.get('.save-button').should('be.visible')
+
+    cy.saveDataIntoExcelFile(loginAdmin.usernameAD, loginAdmin.passwordAD, "DataForLogin", "DanaTrainExecute")
 });
 
 //===========LOGIN UNSUCCESSFULLY WITH INPUT EMAIL AND PASSWORD ARE VALID ON SAMSUNG-S10 SCREEN============

@@ -78,6 +78,8 @@ And(/^I login successfully to Dana train Page with manager account to check the 
     cy.LoginDanaFunctionToCheckDispatch(createDispatch.usernameGD, createDispatch.passwordGD)
     cy.get('.notification-section > .ant-btn').click()
     cy.xpath("//div[@class='sc-fznZeY jlXzwO list-noti']//div[1]//div[1]//div[1]//div[2]//strong[1]").should('have.text', createDispatch.title)
+
+    cy.saveDataIntoExcelFile(createDispatch.usernameVT, createDispatch.passwordVT, createDispatch.usernameGD, createDispatch.passwordGD, "d", "D")
 });
 
 //================CREATE DISPATCH ARRIVAL DEPARTURE WITH SAMSUNG-S10 SCREEN==================
