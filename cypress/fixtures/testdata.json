@@ -1,0 +1,30 @@
+[
+  {
+    "AD_username": "admin",
+    "AD_password": 234
+  },
+  {
+    "VT_username": "221ThisisVanThu",
+    "VT_fullname": "221Tran Trang Hanh",
+    "VT_email": "221hanh.trang@gmail.com",
+    "VT_password": "221vanthu"
+  },
+  {
+    "GD_username": "221ThisisGiamDoc",
+    "GD_fullname": "221Tran Hanh Trang",
+    "GD_email": "221trang.hanh@gmail.com",
+    "GD_password": "221giamdoc"
+  },
+  {
+    "TP_username": "221ThisisTruongPhong",
+    "TP_fullname": "221Tran Hanh Hanh",
+    "TP_email": "221hanh.hanh@gmail.com",
+    "TP_password": "221truongphong"
+  },
+  {
+    "NV_username": "221ThisisNhanVien",
+    "NV_fullname": "221Tran Trang Trang",
+    "NV_email": "221trang.trang@gmail.com",
+    "NV_password": "221nhanvien"
+  }
+]

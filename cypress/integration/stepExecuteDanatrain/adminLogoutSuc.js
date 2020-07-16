@@ -13,7 +13,7 @@ Given(/^I login successfully to Dana train Page$/, function () {
 });
 
 When(/^I click on profile button$/, function () {
-  cy.get('.rightHeader > .ant-avatar > img').click();
+  cy.get('.rightHeader > .ant-avatar').click();
 });
 
 And(/^I click on Logout button$/, function () {

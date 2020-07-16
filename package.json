@@ -4,8 +4,14 @@
   "description": "dana train website",
   "main": "index.js",
   "dependencies": {
+    "exceljs": "^4.1.0",
+    "file-saver": "^2.0.2",
+    "fs": "0.0.1-security",
+    "jszip": "^3.5.0",
     "node-xlsx": "^0.15.0",
-    "xlsx": "^0.16.3"
+    "read-excel-file": "^4.0.6",
+    "xlsx": "^0.16.3",
+    "xlsx-to-json": "^0.3.0"
   },
   "devDependencies": {
     "cypress": "^4.9.0",

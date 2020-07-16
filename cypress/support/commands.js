@@ -43,54 +43,26 @@ Cypress.Commands.add('newUploadBlobFile', (fileName, fileType) => {
     cy.wait(5000)
 })
 
-//--------------Function For Save Data Into Excel File---------------
-const xlsx = require("xlsx")
-
-Cypress.Commands.add('saveDataIntoExcelFile', (data1, data2, data3, data4, sheetName, excelFileName) => {
-    const fromDate = Cypress.moment().format("DD-MM-YYYY")
-
-    //create a workbook - excel file
-    const newWB = xlsx.utils.book_new();
-
-    var heading = [
-        ["UserNameVT", "PasswordVT", "UserNameGD", "PasswordGD"],
-    ];
-
-    const ws_name = xlsx.utils.aoa_to_sheet(heading);
-    console.log("heading" + heading)
-
-    //get data
-    const ws_data = [[data1, data2, data3, data4]];
-    
-    //converts an array of JS objects to a worksheet
-    const newWS = xlsx.utils.json_to_sheet(ws_name, ws_data);
-
-    //save into excel with sheetname and datetime
-    xlsx.utils.book_append_sheet(newWB, newWS, sheetName + " {" + fromDate + "}");
-
-    //name of excel file
-    xlsx.writeFile(newWB, excelFileName + ".xlsx");
-})
 
 //======================FUNCTION FOR WEBSITE AND MACBOOK==========================
 
 Cypress.Commands.add('LogoutDanaFunctionForWebMac', () => {
     //Cause have cy.reload() function, so we need handle click on X icon on the form to logout
     cy.get('.h4 > .anticon').click()
-    cy.get('.ant-avatar').click()
+    cy.get('.rightHeader > .ant-avatar').click()
     cy.get('.ant-dropdown-menu > :nth-child(3)').click();
 })
 
 Cypress.Commands.add('LogoutDanaFunctionForWebMacVT', () => {
     //VT account just create a new dispatch, so this account do not need cy.reload() function
-    cy.get('.ant-avatar').click({ force: true });
+    cy.get('.rightHeader > .ant-avatar').click({ force: true });
     cy.get('.ant-dropdown-menu > :nth-child(3)').click();
 })
 
 //======================FUNCTION FOR MOBILE PHONE==========================
 
 //Cause after create a new dispatch, manager account login recently so do not visit to url
-Cypress.Commands.add('LoginDanaFunctionToCheckDispatch', (username, password) => {
+Cypress.Commands.add('LoginDanaFunctionToCheck', (username, password) => {
     cy.get('#username').click().type(username);
     cy.get('#password').click().type(password);
     cy.get('.ant-btn').click();
@@ -99,7 +71,7 @@ Cypress.Commands.add('LoginDanaFunctionToCheckDispatch', (username, password) =>
 
 //Cause the xpath of VT account icon and other account icon are different 
 Cypress.Commands.add('LogoutDanaFunctionForPhone', () => {
-    cy.get('.active').click()
+    cy.get('[href="/profile"]').click()
     cy.get('.sc-fznOgF > .ant-btn').scrollIntoView().click()
     cy.get('.ant-popover-buttons > .ant-btn-primary').click()
 })

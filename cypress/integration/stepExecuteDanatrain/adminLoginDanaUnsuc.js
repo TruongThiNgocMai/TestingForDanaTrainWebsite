@@ -529,3 +529,4 @@ And(/^I click on Login button at Dana train$/, function () {
 Then(/^I verify notice message display below password for case input data for admin's password less than 3 characters with iphone-6 plus screen$/, function () {
     cy.get(':nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-explain').should('have.text', 'Mật khẩu phải chứa ít nhất 3 ký tự')
 });
+
