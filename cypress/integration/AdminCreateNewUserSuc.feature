@@ -15,7 +15,7 @@ Feature: Navigate and Login Smartos Website Successfully
         And I click on create button to save a new user
         Then I verify create a new user successfully with macbook-15 screen
         And I logout user successfully in the mac size
-        Then I login with user's account create recently successfully with macbook-15 sreen 
+        Then I login with user's account create recently successfully with macbook-15 sreen
 
     Scenario: Create a new user successfully with input all fields on samsung-s10 screen
         Given I navigate to Smartos website with samsung-s10 screen

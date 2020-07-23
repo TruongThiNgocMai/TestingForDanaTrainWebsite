@@ -4,6 +4,8 @@
   "description": "dana train website",
   "main": "index.js",
   "dependencies": {
+    "cross-blob": "^2.0.0",
+    "cypress-promise": "^1.1.0",
     "exceljs": "^4.1.0",
     "file-saver": "^2.0.2",
     "fs": "0.0.1-security",
@@ -11,9 +13,12 @@
     "node-xlsx": "^0.15.0",
     "read-excel-file": "^4.0.6",
     "xlsx": "^0.16.3",
+    "xlsx-browserify-shim": "0.0.5",
+    "xlsx-parse-json": "^3.1.0",
     "xlsx-to-json": "^0.3.0"
   },
   "devDependencies": {
+    "cucumber-html-reporter": "^5.2.0",
     "cypress": "^4.9.0",
     "cypress-cucumber-preprocessor": "^2.5.0",
     "cypress-file-upload": "^4.0.7",

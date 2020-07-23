@@ -1,0 +1,62 @@
+[
+  {
+    "AdminAccount": {
+      "usernameAD": "admin",
+      "passwordAD": 234
+    }
+  },
+  {
+    "GDAccount": {
+      "usernameGD": "ThisisGiamDoc",
+      "passwordGD": "giamdoc",
+      "fullnameGD": "Tran Hanh Trang",
+      "emailGD": "trang.hanh@gmail.com"
+    }
+  },
+  {
+    "VTAccount": {
+      "usernameVT": "ThisisVanThu",
+      "passwordVT": "vanthu",
+      "fullnameVT": "Tran Trang Hanh",
+      "emailVT": "hanh.trang@gmail.com"
+    }
+  },
+  {
+    "TPAccount": {
+      "usernameTP": "ThisisTruongPhong",
+      "passwordTP": "truongphong",
+      "fullnameTP": "Tran Hanh Hanh",
+      "emailTP": "hanh.hanh@gmail.com"
+    }
+  },
+  {
+    "NVAccount": {
+      "usernameNV": "ThisisNhanVien",
+      "passwordNV": "nhanvien",
+      "fullnameNV": "Tran Trang Trang",
+      "emailNV": "trang.trang@gmail.com"
+    }
+  },
+  {
+    "ValueForSearch": {
+      "nameCreatedBefore": "Nhân Viên 1",
+      "nameNotCreatedBefore": "Ngoc Mai",
+      "userNameCreatedBefore": "nhanvien1",
+      "userNameNotCreatedBefore": "ngocmai"
+    }
+  },
+  {
+    "ValueForCreateDispatch": {
+      "fromNumber": 300602020,
+      "sourceNumber": "T4300602020",
+      "publisher": "Cục Bưu Chính",
+      "title": "New Update Title1",
+      "contentdemo": "This is content of demo test case. Have a nice day!"
+    }
+  },
+  {
+    "EmailForReset": {
+      "emailForgotPassword": "mai.truong@student.passerellesnumeriques.org"
+    }
+  }
+]
